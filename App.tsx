@@ -1,32 +1,23 @@
+import 'react-native-gesture-handler';
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import ColorBox from './Components/ColorBox';
+import { NavigationContainer } from '@react-navigation/native';
+import Home from './Components/Home';
+import StylingExercise from './Components/StylingExercise/StylingExercise';
+import ListExercise from './Components/ListExercise/ListExercise';
+import { createStackNavigator } from '@react-navigation/stack';
+
+const Stack = createStackNavigator();
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.heading}>
-        Here are some boxes of different colors
-      </Text>
-      <ColorBox colorName="Cyan" colorHex="#2aa198" />
-      <ColorBox colorName="Blue" colorHex="#268bd2" />
-      <ColorBox colorName="Magenta" colorHex="#d33682" />
-      <ColorBox colorName="Orange" colorHex="#cb4b16" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="StylingExercise" component={StylingExercise} />
+        <Stack.Screen name="ListExercise" component={ListExercise} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    paddingTop: 50,
-    paddingHorizontal: 10,
-  },
-  heading: {
-    color: 'black',
-    fontSize: 19,
-    fontWeight: 'bold',
-    marginBottom: 10,
-  },
-});
 
 export default App;
