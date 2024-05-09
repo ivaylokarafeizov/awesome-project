@@ -10,6 +10,11 @@ const Home = ({ navigation }) => {
       <TouchableOpacity onPress={() => navigation.navigate('ListExercise')}>
         <Text>List Exercise</Text>
       </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => navigation.navigate('NavigationExercise')}
+      >
+        <Text>Navigation Exercise</Text>
+      </TouchableOpacity>
     </View>
   );
 };
