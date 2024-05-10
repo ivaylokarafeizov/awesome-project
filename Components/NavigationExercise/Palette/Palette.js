@@ -18,7 +18,7 @@ const Palette = ({ route }) => {
 };
 
 const styles = StyleSheet.create({
-  container: { paddingTop: 20, paddingHorizontal: 10 },
+  container: { paddingTop: 5, paddingHorizontal: 10 },
   heading: {
     fontSize: 18,
     fontWeight: 'bold',
