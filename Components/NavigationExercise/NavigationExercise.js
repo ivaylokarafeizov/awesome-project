@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { StyleSheet, FlatList } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, FlatList } from 'react-native';
 import PalettePreview from './PalettePreview';
 
 const NavigationExercise = ({ navigation }) => {
@@ -41,6 +41,15 @@ const NavigationExercise = ({ navigation }) => {
       )}
       refreshing={isRefreshing}
       onRefresh={handleRefresh}
+      ListHeaderComponent={
+        <TouchableOpacity
+          onPress={() => {
+            navigation.navigate('AddNewPaletteModal');
+          }}
+        >
+          <Text>Launch Modal</Text>
+        </TouchableOpacity>
+      }
     />
   );
 };
