@@ -4,6 +4,7 @@ import PalettePreview from './PalettePreview';
 
 const NavigationExercise = ({ navigation }) => {
   const [palettes, setPalettes] = useState([]);
+  const [isRefreshing, setIsRefreshing] = useState(false);
 
   const handleFetchPalettes = useCallback(async () => {
     const response = await fetch(
@@ -20,6 +21,12 @@ const NavigationExercise = ({ navigation }) => {
     handleFetchPalettes();
   }, []);
 
+  const handleRefresh = useCallback(async () => {
+    setIsRefreshing(true);
+    await handleFetchPalettes();
+    setIsRefreshing(false);
+  }, []);
+
   return (
     <FlatList
       style={styles.container}
@@ -32,6 +39,8 @@ const NavigationExercise = ({ navigation }) => {
           palette={item}
         />
       )}
+      refreshing={isRefreshing}
+      onRefresh={handleRefresh}
     />
   );
 };
