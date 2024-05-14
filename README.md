@@ -6,19 +6,19 @@
 The Home page contains three exercises you can access by clicking on them.
 
 
-# Styling Exercise
+## Styling Exercise
 <img src="https://github.com/ivaylokarafeizov/awesome-project/assets/106147027/c7cb483e-be8d-41d8-8fab-1fb28a44cfd4" />
 
 Simple component with some CSS applied.
 
 
-# List Exercise
+## List Exercise
 <img src="https://github.com/ivaylokarafeizov/awesome-project/assets/106147027/f2dd09d0-9a7d-44cb-9362-e4b6de29ae3f" />
 
 Solarized color palette created using FlatList.
 
 
-# Navigation Exercise
+## Navigation Exercise
 <img src="https://github.com/ivaylokarafeizov/awesome-project/assets/106147027/8b2fa97f-e1ea-4d35-9224-9fc6b011429d" />
 
 Here you can see a list of color palettes (each consisting of 5 colors). You can access the whole palette by clicking on it. There is also a modal used for creating user-selected palettes. 
