@@ -1,3 +1,12 @@
+  
+# Awesome Project - React Native
+
+## Home
+<img src="https://github.com/ivaylokarafeizov/games-reviews/assets/106147027/735c139b-6182-4be6-a8ae-91aa123c451c" />
+
+The Home page contains a site description and three of the newest reviews. There are also details about the benefits you have when you sign in. 
+ 
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
