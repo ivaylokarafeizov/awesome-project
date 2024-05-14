@@ -1,15 +1,15 @@
   
 # Awesome Project - React Native
 
-### Home
+##  Home
 <img src="https://github.com/ivaylokarafeizov/awesome-project/assets/106147027/49545ea3-4fb4-4f1b-9271-8ccaab07a7ad" />
 
 The Home page contains three exercises you can access by clicking on them.
 
-## Styling Exercise
+# Styling Exercise
 <img src="https://github.com/ivaylokarafeizov/awesome-project/assets/106147027/c7cb483e-be8d-41d8-8fab-1fb28a44cfd4" />
 
-The Home page contains three exercises you can access by clicking on them.
+Simple components with some CSS applied.
  
 
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
