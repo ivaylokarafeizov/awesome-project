@@ -1,6 +1,6 @@
 # Awesome Project - React Native
 
-##  Home
+#  Home
 <img src="https://github.com/ivaylokarafeizov/awesome-project/assets/106147027/49545ea3-4fb4-4f1b-9271-8ccaab07a7ad" />
 
 The Home page contains three exercises you can access by clicking on them.
@@ -23,7 +23,7 @@ Solarized color palette created using FlatList.
 
 Here you can see a list of color palettes (each consisting of 5 colors). You can access the whole palette by clicking on it. There is also a modal used for creating user-selected palettes. 
 
-  # Add New Color Palette Modal
+  ### Add New Color Palette Modal
   <img src="https://github.com/ivaylokarafeizov/awesome-project/assets/106147027/4a8a15d3-94c4-47f8-9736-a640dde5f2b4" />
 
   Here you can type the palette's name and select at least three colors to submit the palette. 
