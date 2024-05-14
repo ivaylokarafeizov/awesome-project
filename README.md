@@ -5,20 +5,28 @@
 
 The Home page contains three exercises you can access by clicking on them.
 
+
 # Styling Exercise
 <img src="https://github.com/ivaylokarafeizov/awesome-project/assets/106147027/c7cb483e-be8d-41d8-8fab-1fb28a44cfd4" />
 
 Simple component with some CSS applied.
+
 
 # List Exercise
 <img src="https://github.com/ivaylokarafeizov/awesome-project/assets/106147027/f2dd09d0-9a7d-44cb-9362-e4b6de29ae3f" />
 
 Solarized color palette created using FlatList.
 
+
 # Navigation Exercise
 <img src="https://github.com/ivaylokarafeizov/awesome-project/assets/106147027/8b2fa97f-e1ea-4d35-9224-9fc6b011429d" />
 
 Here you can see a list of color palettes (each consisting of 5 colors). You can access the whole palette by clicking on it. There is also a modal used for creating user-selected palettes. 
+
+  # Add New Color Palette Modal
+  <img src="https://github.com/ivaylokarafeizov/awesome-project/assets/106147027/4a8a15d3-94c4-47f8-9736-a640dde5f2b4" />
+
+  Here you can type the palette's name and select at least three colors to submit the palette. 
  
 
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
