@@ -2,7 +2,7 @@
 # Awesome Project - React Native
 
 ## Home
-<img src="https://github.com/ivaylokarafeizov/games-reviews/assets/106147027/735c139b-6182-4be6-a8ae-91aa123c451c" />
+<img src="https://github.com/ivaylokarafeizov/awesome-project/assets/106147027/49545ea3-4fb4-4f1b-9271-8ccaab07a7ad" />
 
 The Home page contains a site description and three of the newest reviews. There are also details about the benefits you have when you sign in. 
  
