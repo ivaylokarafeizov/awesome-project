@@ -2,7 +2,10 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { StyleSheet, Text, TouchableOpacity, FlatList } from 'react-native';
 import PalettePreview from './PalettePreview';
 
-const NavigationExercise = ({ navigation }) => {
+const NavigationExercise = ({ navigation, route }) => {
+  const newColorPalette = route.params
+    ? route.params.newColorPalette
+    : undefined;
   const [palettes, setPalettes] = useState([]);
   const [isRefreshing, setIsRefreshing] = useState(false);
 
@@ -27,10 +30,17 @@ const NavigationExercise = ({ navigation }) => {
     setIsRefreshing(false);
   }, []);
 
+  useEffect(() => {
+    if (newColorPalette) {
+      setPalettes((palettes) => [newColorPalette, ...palettes]);
+    }
+  }, [newColorPalette]);
+
   return (
     <FlatList
       style={styles.container}
       data={palettes}
+      keyExtractor={(item) => item.paletteName}
       renderItem={({ item }) => (
         <PalettePreview
           handlePress={() => {
@@ -47,7 +57,7 @@ const NavigationExercise = ({ navigation }) => {
             navigation.navigate('AddNewPaletteModal');
           }}
         >
-          <Text>Launch Modal</Text>
+          <Text style={styles.buttonText}>Add New Color Palette</Text>
         </TouchableOpacity>
       }
     />
@@ -58,6 +68,12 @@ const styles = StyleSheet.create({
   container: {
     paddingTop: 10,
     paddingHorizontal: 10,
+  },
+  buttonText: {
+    fontSize: 19,
+    color: 'teal',
+    fontWeight: 'bold',
+    marginBottom: 10,
   },
 });
 
